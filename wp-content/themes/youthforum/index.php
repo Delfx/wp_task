@@ -16,9 +16,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<!-- <link rel="stylesheet" href="style.css"> -->
-
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=2" type="text/css" media="screen" />
 
 
 
@@ -82,72 +80,6 @@
 						</div>
 
 					</div>
-
-					<!-- <div class="col-12">
-						<div class="timer-clock-block d-flex align-content-center align-items-center">
-
-							<div class="time-day col ">
-								<div class="time-number">
-									11
-								</div>
-
-								<div class="time-text">
-									Days
-								</div>
-							</div>
-
-							<div class="col">
-								<div class="colon-style row justify-content-center align-self-center">
-									:
-								</div>
-							</div>
-
-							<div class="time-hours col">
-								<div class="row">
-									<div class="time-number">
-										21
-									</div>
-
-								</div>
-								<div class="time-text">
-									Hours
-								</div>
-							</div>
-
-							<div class="col">
-								<div class="colon-style row justify-content-center align-self-center">
-									:
-								</div>
-							</div>
-
-							<div class="time-minutes col">
-								<div class="time-number">
-									24
-								</div>
-								<div class="time-text">
-									Minutes
-								</div>
-							</div>
-
-							<div class="col">
-								<div class="colon-style row justify-content-center align-self-center">
-									:
-								</div>
-							</div>
-
-							<div class="time-seconds col">
-								<div class="row">
-									<div class="time-number">
-										24
-									</div>
-								</div>
-								<div class="time-text">
-									Seconds
-								</div>
-							</div>
-
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -235,7 +167,7 @@
 
 	<section class="container-fluid p-0">
 
-		<div class="col-12 p position-absolute mt-n5">
+		<div class="col-12 position-absolute triangle-pic mt-n5">
 			<img src="<?php bloginfo('template_directory'); ?>/assets/img/line_triangle.svg" class="img-fluid w-100" alt="Responsive image">
 		</div>
 
