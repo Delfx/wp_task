@@ -1,3 +1,9 @@
+<?php
+/*
+        Template Name: youthforum
+    */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +16,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css" type="text/css" media="screen" />
+
+
+
 	<title>Title</title>
 </head>
 
@@ -18,10 +29,9 @@
 
 	<section class="container-fluid p-0">
 
-		<img src="./assets/img/HERO.svg" class="img-fluid w-100 d-none d-sm-none d-md-block img-header-large"
-			alt="Responsive image">
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/HERO.svg" class="img-fluid w-100 d-none d-sm-none d-md-block img-header-large" alt="Responsive image">
 
-		<img src="./assets/img/OG_small.svg" class="img-fluid d-md-none w-100" alt="Responsive image">
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/OG_small.svg" class="img-fluid d-md-none w-100" alt="Responsive image">
 
 
 		<div class="col-md-12 col-11 mx-auto mt-n5">
@@ -45,7 +55,7 @@
 						</div>
 
 						<div>
-							<p class="colon-style p-0 " >:</p>
+							<p class="colon-style p-0 ">:</p>
 						</div>
 
 						<div>
@@ -54,7 +64,7 @@
 						</div>
 
 						<div>
-							<p class="colon-style p-0 " >:</p>
+							<p class="colon-style p-0 ">:</p>
 						</div>
 
 						<div>
@@ -63,7 +73,7 @@
 						</div>
 
 						<div>
-							<p class="colon-style p-0 " >:</p>
+							<p class="colon-style p-0 ">:</p>
 						</div>
 
 						<div>
@@ -156,35 +166,38 @@
 
 			<div class="col-12 col-md-4 mb-4">
 				<div class="d-flex">
-					<img src="assets/img/eu.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/eu.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
 				</div>
 				<div class="text-justify col-md-11 mx-auto">
-					To celebrate the 10th anniversary of European Union and Eastern Partnership cooperation,
-					highlight
-					the impact and achievements;
+
+					<?php
+					the_field('european');
+					?>
+
 				</div>
 			</div>
 
 			<div class="col-12 col-md-4 mb-4">
 				<div class="d-flex">
-					<img src="assets/img/lader.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/lader.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
 				</div>
 				<div class="text-justify col-md-11 mx-auto">
-					To celebrate the 10th anniversary of European Union and Eastern Partnership cooperation,
-					highlight
-					the impact and achievements;
+					<?php
+					the_field('opportunities');
+					?>
 				</div>
 			</div>
 
 			<div class="col-12 col-md-4 mb-4">
 				<div class="d-flex">
-					<img src="assets/img/message.svg" class="align-content-center align-items-center mx-auto mb-4"
-						alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/message.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
 				</div>
 				<div class="text-justify col-md-11 mx-auto">
-					To celebrate the 10th anniversary of European Union and Eastern Partnership cooperation,
-					highlight
-					the impact and achievements;
+
+					<?php
+					the_field('discussions');
+					?>
+
 				</div>
 			</div>
 		</div>
@@ -193,23 +206,27 @@
 
 			<div class="col-12 col-md-4 mb-4">
 				<div class="d-flex">
-					<img src="assets/img/hands.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/hands.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
 				</div>
 				<div class="text-justify col-md-11 mx-auto">
-					To celebrate the 10th anniversary of European Union and Eastern Partnership cooperation,
-					highlight
-					the impact and achievements;
+
+					<?php
+					the_field('encourage');
+					?>
+
 				</div>
 			</div>
 
 			<div class="col-12 col-md-4 mb-4">
 				<div class="d-flex">
-					<img src="assets/img/mic.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/mic.svg" class="align-content-center align-items-center mx-auto mb-4" alt="">
 				</div>
 				<div class="text-justify col-md-11 mx-auto">
-					To celebrate the 10th anniversary of European Union and Eastern Partnership cooperation,
-					highlight
-					the impact and achievements;
+
+					<?php
+					the_field('celebrate');
+					?>
+
 				</div>
 			</div>
 		</div>
@@ -219,7 +236,7 @@
 	<section class="container-fluid p-0">
 
 		<div class="col-12 p position-absolute mt-n5">
-			<img src="assets/img/line_triangle.svg" class="img-fluid w-100" alt="Responsive image">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/img/line_triangle.svg" class="img-fluid w-100" alt="Responsive image">
 		</div>
 
 	</section>
@@ -251,8 +268,7 @@
 						Countries
 					</p>
 					<p class="text-justify text-map-explain">
-						including active young people, youth workers and youth policy makers from both Eastern
-						Partnership
+						European countries involved in the EU Erasmus+
 					</p>
 				</div>
 
@@ -264,8 +280,7 @@
 						Days
 					</p>
 					<p class="text-justify text-map-explain">
-						including active young people, youth workers and youth policy makers from both Eastern
-						Partnership
+						Programme — will meet and discuss in a two-day event in Vilnius, on 17-20 June 2018.
 					</p>
 				</div>
 
@@ -274,7 +289,7 @@
 
 
 		<div class="col-12">
-			<img src="assets/img/map.svg" class="img-fluid w-100 p-md-5" alt="Responsive image">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/img/map.svg" class="img-fluid w-100 p-md-5" alt="Responsive image">
 		</div>
 	</section>
 
@@ -282,7 +297,7 @@
 
 
 		<div class="position-absolute location-description-rectangle">
-			<img src="assets/img/rectangle.svg" class="img-fluid w-100" alt="Responsive image">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/img/rectangle.svg" class="img-fluid w-100" alt="Responsive image">
 		</div>
 
 		<div class="col-12 ">
@@ -291,33 +306,34 @@
 
 				<div class="col-md-5 col-12 d-flex location-description-img align-items-center">
 					<a href="https://goo.gl/maps/DWSubLTwmRCKV61J6">
-						<img src="assets/img/map_with_lines.svg" class="img-fluid w-100 h-auto" alt="Responsive image">
+						<img src="<?php bloginfo('template_directory'); ?>/assets/img/map_with_lines.svg" class="img-fluid w-100 h-auto" alt="Responsive image">
 					</a>
 				</div>
 
 				<div class="col-12 offset-md-1 col-md-6 p-0 mt-3 mt-md-0">
 
 					<h3 class="text-xl-left text-center ">
-						About Forum
+						<?php
+						the_field('about_forum');
+						?>
 					</h3>
 
 					<h2 class="text-lg-left text-center mb-5">
-						We all will meet in Vilnius on 17-20 June 2019!
+						<?php
+						the_field('about_forum_h2');
+						?>
 					</h2>
 
 					<p class="about-description-text text-justify">
-						The event will gather youth and youth work representatives, around 250 participants: each
-						EaP
-						country with 10 delegates from youth, organizations and institutions working with youth, EaP
-						Youth ambassadors network representatives, 34 “Erasmus+” programme countries with 2
-						delegates
-						per country, team of facilitators and experts, other European Union, Council of Europe,
-						national
-						agency and international youth organizations representatives.
+						<?php
+						the_field('about_forum_description');
+						?>
 					</p>
 
 					<u>
-						<a href="https://goo.gl/maps/DWSubLTwmRCKV61J6">Ežeraičių km., Ežeraičių g. 2, Vilnius, Lietuva
+						<a href="https://goo.gl/maps/DWSubLTwmRCKV61J6">
+
+							Ežeraičių km., Ežeraičių g. 2, Vilnius, Lietuva
 							LT-14200</a>
 
 					</u>
@@ -342,29 +358,29 @@
 					</h3>
 
 					<h2 class="text-lg-left text-center text-md-center mb-3 mb-md-5">
-						Lithuania is a country in Northern Europe
+						<?php
+						the_field('about_lithuania_h2');
+						?>
 					</h2>
 
 					<div class="col-md-5 col-12 d-flex align-items-center mb-2 mt-md-0 ">
-						<img src="assets/img/vilnius_pic.svg"
-							class="w-md-75 mx-auto d-block d-sm-none d-none d-sm-block d-md-none img-fluid" alt="">
+						<img src="<?php bloginfo('template_directory'); ?>/assets/img/vilnius_pic.svg" class="w-md-75 mx-auto d-block d-sm-none d-none d-sm-block d-md-none img-fluid" alt="">
 					</div>
 
 					<p class="about-description-text text-justify">
-						The official name of the country is the Republic of Lithuania. Lithuania is situated on the
-						eastern
-						shore of the Baltic Sea and borders Latvia on the north, Belarus on the east and south, and
-						Poland
-						and
-						the Kaliningrad region of Russia on the southwest. The official language is Lithuanian.
-						Vilnius is the capital of Lithuania and its largest city. It is known for its baroque
-						architecture,
-						seen
-						especially in its medieval old town.
+						<?php
+						the_field('about_lithuania_description');
+						?>
 					</p>
 
 					<u>
-						<a href="">Find out more &#8594;</a>
+						<a href="
+						
+						<?php
+						the_field('about_lithuania_link');
+						?>
+						
+						">Find out more &#8594;</a>
 					</u>
 				</div>
 
@@ -372,8 +388,7 @@
 			</div>
 
 			<div class="col-md-5 col-12 d-flex align-items-center mt-5 mt-md-0 ">
-				<img src="assets/img/vilnius_pic.svg"
-					class="w-md-75 w-100 d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block" alt="">
+				<img src="<?php bloginfo('template_directory'); ?>/assets/img/vilnius_pic.svg" class="w-md-75 w-100 d-none d-md-block d-lg-none d-lg-block d-xl-none d-xl-block" alt="">
 			</div>
 
 		</div>
@@ -383,7 +398,7 @@
 	<section class="container-fluid position-absolute mt-n5 d-none d-sm-block d-sm-none d-md-block">
 
 		<div class="d-flex justify-content-center">
-			<img src="assets/img/triangle_lower.svg" class="col-11 img-fluid w-100" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/img/triangle_lower.svg" class="col-11 img-fluid w-100" alt="">
 		</div>
 
 	</section>
@@ -404,14 +419,18 @@
 
 							<div class="swiper-slide">
 								<div class="card p-5 card-size">
-									<img src="assets/img/moderator.svg" class="w-100 mb-5" alt="">
+									<img src="<?php bloginfo('template_directory'); ?>/assets/img/moderator.svg" class="w-100 mb-5" alt="">
 
 									<p class="name text-center">
-										Marcus Vrecer
+										<?php
+										the_field('moderator_1_name');
+										?>
 									</p>
 
 									<p class="name-description text-center">
-										Main moderator, Austria
+										<?php
+										the_field('moderator_1_description');
+										?>
 									</p>
 								</div>
 							</div>
@@ -419,42 +438,90 @@
 
 							<div class="swiper-slide">
 								<div class="card p-5 card-size" style="">
-									<img src="assets/img/moderator.svg" class="w-100 mb-5" alt="">
+									<img src="<?php bloginfo('template_directory'); ?>/assets/img/moderator.svg" class="w-100 mb-5" alt="">
 
 									<p class="name text-center">
-										Marcus Vrecer
+										<?php
+										the_field('moderator_2_name');
+										?>
 									</p>
 
 									<p class="name-description text-center">
-										Main moderator, Austria
+										<?php
+										the_field('moderator_2_description');
+										?>
 									</p>
 								</div>
 							</div>
 
 							<div class="swiper-slide">
 								<div class="card p-5 card-size" style="">
-									<img src="assets/img/moderator.svg" class="w-100 mb-5" alt="">
+									<img src="<?php bloginfo('template_directory'); ?>/assets/img/moderator.svg" class="w-100 mb-5" alt="">
 
 									<p class="name text-center">
-										Marcus Vrecer
+										<?php
+										the_field('moderator_2_name');
+										?>
 									</p>
 
 									<p class="name-description text-center">
-										Main moderator, Austria
+										<?php
+										the_field('moderator_2_description');
+										?>
 									</p>
 								</div>
 							</div>
 
 							<div class="swiper-slide">
 								<div class="card p-5 card-size" style="">
-									<img src="assets/img/moderator.svg" class="w-100 mb-5" alt="">
+									<img src="<?php bloginfo('template_directory'); ?>/assets/img/moderator.svg" class="w-100 mb-5" alt="">
 
 									<p class="name text-center">
-										Marcus Vrecer
+										<?php
+										the_field('moderator_3_name');
+										?>
 									</p>
 
 									<p class="name-description text-center">
-										Main moderator, Austria
+										<?php
+										the_field('moderator_3_description');
+										?>
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="card p-5 card-size" style="">
+									<img src="<?php bloginfo('template_directory'); ?>/assets/img/moderator.svg" class="w-100 mb-5" alt="">
+
+									<p class="name text-center">
+										<?php
+										the_field('moderator_4_name');
+										?>
+									</p>
+
+									<p class="name-description text-center">
+										<?php
+										the_field('moderator_4_description');
+										?>
+									</p>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="card p-5 card-size" style="">
+									<img src="<?php bloginfo('template_directory'); ?>/assets/img/moderator.svg" class="w-100 mb-5" alt="">
+
+									<p class="name text-center">
+										<?php
+										the_field('moderator_5_name');
+										?>
+									</p>
+
+									<p class="name-description text-center">
+										<?php
+										the_field('moderator_5_description');
+										?>
 									</p>
 								</div>
 							</div>
@@ -465,11 +532,10 @@
 		</div>
 	</section>
 
-	<section
-		class="container dot-picture position-absolute col-12 d-none d-lg-block d-xl-block d-xl-none d-md-block d-lg-none">
+	<section class="container dot-picture position-absolute col-12 d-none d-lg-block d-xl-block d-xl-none d-md-block d-lg-none">
 
 		<div class="">
-			<img src="assets/img/patternBg.svg" class="img-fluid w-100" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/img/patternBg.svg" class="img-fluid w-100" alt="">
 		</div>
 
 	</section>
@@ -478,7 +544,7 @@
 	<section class="container dot-picture-small position-absolute col-12 d-block d-sm-none d-none d-sm-block d-md-none">
 
 		<div class="">
-			<img src="assets/img/patternBg_small.svg" class="img-fluid w-100" alt="">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/img/patternBg_small.svg" class="img-fluid w-100" alt="">
 		</div>
 
 	</section>
@@ -492,20 +558,19 @@
 			</h3>
 
 
-			<div
-				class="organisers-logo d-flex flex-md-row flex-column align-items-center align-content-center justify-content-around mt-5 mt-md-3">
+			<div class="organisers-logo d-flex flex-md-row flex-column align-items-center align-content-center justify-content-around mt-5 mt-md-3">
 
 				<div class="m-3 m-md-5 m-lg-0">
-					<img src="assets/img/logo/logo_ce-en-rvb-hr.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo/logo_ce-en-rvb-hr.svg" class="img-fluid" alt="">
 				</div>
 
 				<div class="m-3 m-md-5 m-lg-0">
-					<img src="assets/img/logo/Asset 1@2x.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo/Asset 1@2x.svg" class="img-fluid" alt="">
 				</div>
 
 
 				<div class="m-3 m-md-5 m-lg-0">
-					<img src="assets/img/logo/urm_naujas_logo_angliskas.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/logo/urm_naujas_logo_angliskas.svg" class="img-fluid" alt="">
 				</div>
 
 			</div>
@@ -517,23 +582,23 @@
 			<div class="row col-12 justify-content-between">
 
 				<div class="col-12 col-md-2 m-3 m-md-0 d-flex justify-content-center">
-					<img src="assets/img/partners/Rumunijos NA.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/Rumunijos NA.svg" class="img-fluid" alt="">
 				</div>
 
 				<div class="col-12 col-md-2 m-3 m-md-0 d-flex justify-content-center">
-					<img src="assets/img/partners/znak podstawowy_poziomy.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/znak podstawowy_poziomy.svg" class="img-fluid" alt="">
 				</div>
 
 				<div class="col-12 col-md-2 m-3 m-md-0 d-flex justify-content-center">
-					<img src="assets/img/partners/FNAFE@2x.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/FNAFE@2x.svg" class="img-fluid" alt="">
 				</div>
 
 				<div class="col-12 col-md-2 m-3 m-md-0 d-flex justify-content-center">
-					<img src="assets/img/partners/LIJOT_logo-03.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/LIJOT_logo-03.svg" class="img-fluid" alt="">
 				</div>
 
 				<div class="col-12 col-md-2 mt-5 m-md-0 d-flex justify-content-center">
-					<img src="assets/img/partners/EYF@2x.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/EYF@2x.svg" class="img-fluid" alt="">
 				</div>
 
 			</div>
@@ -541,21 +606,20 @@
 			<div class="row col-12 justify-content-between mt-md-5 mt-0">
 
 				<div class="col-12 col-md-2  mt-5 m-md-0 d-flex justify-content-center">
-					<img src="assets/img/partners/AG@2x.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/AG@2x.svg" class="img-fluid" alt="">
 				</div>
 
 				<div class="col-12 col-md-2  mt-5 m-md-0 d-flex  justify-content-center">
-					<img src="assets/img/partners/jugend@2x.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/jugend@2x.svg" class="img-fluid" alt="">
 				</div>
 
 
 				<div class="col-12 col-md-2 mt-5 m-md-0 d-flex justify-content-center">
-					<img src="assets/img/partners/Erasmus+Salto Eastern Europe And Caucasus RGB vertical.svg"
-						class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/Erasmus+Salto Eastern Europe And Caucasus RGB vertical.svg" class="img-fluid" alt="">
 				</div>
 
 				<div class="col-12 col-md-2 mt-5 m-md-0 d-flex justify-content-center">
-					<img src="assets/img/partners/ECSF@2x.svg" class="img-fluid" alt="">
+					<img src="<?php bloginfo('template_directory'); ?>/assets/img/partners/ECSF@2x.svg" class="img-fluid" alt="">
 				</div>
 
 			</div>
@@ -597,8 +661,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/swiper.js"></script>
-	<script type="text/javascript" src="assets/js/counter.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/swiper.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/counter.js"></script>
 
 
 
