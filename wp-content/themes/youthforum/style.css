@@ -1,0 +1,303 @@
+/*
+
+Theme name: youthforum
+
+Theme URI: the website that can be created to demonstrate the functionalities of the theme, it can also contain a form for people to be able to buy it;
+
+Author: write your name, so people can contact you if they are interested in your theme;
+
+Author URI: if you have your own website, you can add it in this line of code;
+
+Github Theme URI: it’s interesting to add the theme on Github so that users can add new features, suggest improvements, and answer questions in that collaborative environment, for example;
+
+Description: add information about the theme, if it’s suitable for a specific type of business, blog, e-commerce, etc.;
+
+Version: 1.3.0.;
+
+Text domain: it’s important to translate the theme into other languages.
+
+*/
+
+
+
+
+
+@font-face {
+	font-family: 'Aileron-SemiBold';
+	src: url('/assets/font/Aileron-SemiBold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Aileron-Light';
+	src: url('/assets/font/Aileron-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Aileron-Bold';
+	src: url('/assets/font/Aileron-Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Aileron-Regular';
+	src: url('/assets/font/Aileron-Regular.otf') format('opentype');
+}
+
+h3 {
+	font-family: Aileron-Bold;
+	font-size: 24px;
+	line-height: 54px;
+	/* or 225% */
+	text-align: center;
+	color: #93B9FF;
+}
+
+h2 {
+	font-family: Aileron-Bold;
+	font-size: 40px;
+	line-height: 54px;
+	/* or 135% */
+	text-align: center;
+	color: #223F78;
+}
+
+.number-map {
+	font-family: Aileron-Light;
+	font-size: 90px;
+	line-height: 108px;
+	color: #223F78;
+}
+
+.text-map-blue {
+	font-family: Aileron-Bold;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	letter-spacing: 6.22222px;
+	text-transform: uppercase;
+	color: #223F78;
+}
+
+.text-map-explain {
+	font-family: Aileron-Regular;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #7E8085;
+}
+
+.map {
+	margin-top: 8rem;
+}
+
+.lithuania-vilnius {
+	background: #F6F8F9;
+}
+
+.time-white-box {
+	display: flex;
+	left: 0;
+	right: 0;
+	background-color: white;
+	position: absolute;
+	height: 20vw;
+	-webkit-box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.box-top-border {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	width: 20%;
+	border-top: 6px solid #FDB72E;
+}
+
+.time-remaining-style {
+	font-family: Aileron-SemiBold;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 17px;
+	text-align: center;
+	letter-spacing: 6.22222px;
+	color: #D7D9E0;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	top: 10px;
+}
+
+.time-number {
+	font-family: Aileron-Light;
+	font-size: 3.5vw;
+	color: #223F78;
+}
+
+.time-text {
+	font-family: Aileron-Bold;
+	font-size: 1rem;
+	color: #93B9FF;
+}
+
+.colon-style {
+	font-family: Aileron-Regular;
+	margin-top: 5px;
+	font-size: 2.5vw;
+	color: #D7D9E0;
+	/* margin-left: 30%; */
+}
+
+.forum-style {
+	margin-top: 15vw;
+}
+
+.margin-top-participants {
+	margin-top: 8rem;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	/* background: #fff; */
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	/* display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; */
+}
+
+.name {
+	font-family: Aileron-Regular;
+	font-size: 2rem;
+	text-align: center;
+	color: #2C2E30;
+}
+
+.name-description {
+	font-family: Aileron-Regular;
+	font-size: 1rem;
+	text-align: center;
+	color: #7E8085;
+}
+
+.card-size {
+	width: 40rem;
+}
+
+.organisers-text {
+	font-size: 21px;
+	line-height: 25px;
+	color: #2C2E30;
+}
+
+.organisers-container {
+	margin-top: 13rem;
+}
+
+#countdownn, #days {
+	color: #223F78;
+}
+
+@media (max-width: 1020px) {
+	h2 {
+		font-size: 30px;
+		line-height: 43px;
+		/* or 143% */
+		color: #223F78;
+	}
+	.location-description-rectangle {
+		margin-top: 13rem;
+	}
+	.dot-picture {
+		margin-top: -8rem;
+	}
+	.time-text {
+		font-size: 0.5rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.location-description-rectangle {
+		margin-top: 0rem;
+	}
+	.dot-picture-small {
+		margin-top: -100%;
+	}
+	.time-white-box {
+		height: 35vw;
+		width: 100% !important;
+		margin-top: -36vw;
+	}
+
+	.time-remaining-style {
+		font-size: 3vw;
+		margin-top: 1% !important;
+	}
+
+	.time-number{
+		font-size: 5vw;
+	}
+}
+
+@media (min-width: 767px) {}
+
+@media (min-width: 1024px) {
+	.location-description-rectangle {
+		width: 25%;
+		margin-left: -8rem;
+		margin-top: -3vw;
+	}
+	.about-lithuania-block-text {
+		/* margin-top: 10%; */
+	}
+	.dot-picture {
+		margin-top: -15rem;
+	}
+}
+
+@media (min-width: 1524px) {
+	.dot-picture {
+		margin-top: -20%;
+	}
+
+	.time-text {
+		font-size: 1.5vw;
+	}
+
+	.time-remaining-style {
+		font-size: 1.5vw;
+		margin-top: 3% !important;
+	}
+
+	
+	.triangle-pic{
+		margin-top: -3% !important;
+	}
+}
