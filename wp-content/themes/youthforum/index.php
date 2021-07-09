@@ -2,6 +2,9 @@
 /*
         Template Name: youthforum
     */
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -16,17 +19,17 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=2" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=5" type="text/css" media="screen" />
 
 
 
-	<title>Title</title>
+	<title>Youth Forum</title>
 </head>
 
 <body>
 
-	<section class="container-fluid p-0">
 
+	<section class="container-fluid p-0">
 		<img src="<?php bloginfo('template_directory'); ?>/assets/img/HERO.svg" class="img-fluid w-100 d-none d-sm-none d-md-block img-header-large" alt="Responsive image">
 
 		<img src="<?php bloginfo('template_directory'); ?>/assets/img/OG_small.svg" class="img-fluid d-md-none w-100" alt="Responsive image">
@@ -42,8 +45,6 @@
 					</div>
 
 					<div class="mt-3 time-remaining-style position-absolute">REMAINING TIME</div>
-
-					<!-- <p id="countdown" class="col-12 d-flex justify-content-center mt-4" style="font-size: 30px;"> </p> -->
 
 					<div id="countdownn" class="col-12 d-flex justify-content-around mt-4 ">
 
@@ -94,7 +95,7 @@
 			</div>
 		</div>
 
-		<div class="row col-12 p-md-5 p-0">
+		<div class="row col-12 p-md-5 p-0 mt-5 mt-md-0">
 
 			<div class="col-12 col-md-4 mb-4">
 				<div class="d-flex">
@@ -168,7 +169,7 @@
 	<section class="container-fluid p-0">
 
 		<div class="col-12 position-absolute triangle-pic mt-n5">
-			<img src="<?php bloginfo('template_directory'); ?>/assets/img/line_triangle.svg" class="img-fluid w-100" alt="Responsive image">
+			<img src="<?php bloginfo('template_directory'); ?>/assets/img/line_triangle.svg" class="img-fluid w-100 d-sm-none d-none d-md-block" alt="Responsive image">
 		</div>
 
 	</section>
@@ -232,9 +233,9 @@
 			<img src="<?php bloginfo('template_directory'); ?>/assets/img/rectangle.svg" class="img-fluid w-100" alt="Responsive image">
 		</div>
 
-		<div class="col-12 ">
+		<div class="col-12">
 
-			<div class="row p-5">
+			<div class="row p-3 p-md-5">
 
 				<div class="col-md-5 col-12 d-flex location-description-img align-items-center">
 					<a href="https://goo.gl/maps/DWSubLTwmRCKV61J6">
@@ -262,7 +263,7 @@
 						?>
 					</p>
 
-					<u>
+					<u class="mt-md-0 mt-5">
 						<a href="https://goo.gl/maps/DWSubLTwmRCKV61J6">
 
 							Ežeraičių km., Ežeraičių g. 2, Vilnius, Lietuva
@@ -278,11 +279,11 @@
 
 	</section>
 
-	<section class="container col-12 lithuania-vilnius p-5">
+	<section class="container col-12 lithuania-vilnius p-md-5">
 
-		<div class="col-md-12 col-12 row d-flex justify-content-center h-100 align-items-center">
+		<div class="row d-flex justify-content-center align-items-center p-2 p-md-0">
 
-			<div class="col-12 col-md-5 mr-md-5 mr-0">
+			<div class="col-md-5 mr-md-5 m-0 ">
 
 				<div class="about-lithuania-block-text">
 					<h3 class="text-lg-left text-center">
@@ -564,13 +565,13 @@
 		<hr class="w-100 p-0">
 	</section>
 
-	<footer class="container col-10 d-flex d-flex justify-content-between">
+	<footer class="container col-11 d-flex justify-content-between align-items-center align-align-content-center pb-3">
 
-		<div>
-			<p>© Lorem ipsum 2010 - 2019</p>
+		<div class="">
+			<p class="footer-text m-0" >© Lorem ipsum 2010 - 2019</p>
 		</div>
 
-		<div>
+		<div class="">
 			<span class="fa-stack fa-sm">
 				<i class="fa fa-circle fa-stack-2x" style="color: #2F5BEA;"></i>
 				<i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -601,3 +602,4 @@
 </body>
 
 </html>
+

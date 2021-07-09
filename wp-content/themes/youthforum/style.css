@@ -18,32 +18,28 @@ Text domain: it’s important to translate the theme into other languages.
 
 */
 
-
-
-
-
 @font-face {
 	font-family: 'Aileron-SemiBold';
-	src: url('/assets/font/Aileron-SemiBold.otf') format('opentype');
+	src: url('/wp-content/themes/youthforum/assets/font/Aileron-SemiBold.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'Aileron-Light';
-	src: url('/assets/font/Aileron-Light.otf') format('opentype');
+	src: url('/wp-content/themes/youthforum/assets/font/Aileron-Light.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'Aileron-Bold';
-	src: url('/assets/font/Aileron-Bold.otf') format('opentype');
+	src: url('/wp-content/themes/youthforum/assets/font/Aileron-Bold.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'Aileron-Regular';
-	src: url('/assets/font/Aileron-Regular.otf') format('opentype');
+	src: url('/wp-content/themes/youthforum/assets/font/Aileron-Regular.otf') format('opentype');
 }
 
 h3 {
-	font-family: Aileron-Bold;
+	font-family: Aileron-Bold !important;
 	font-size: 24px;
 	line-height: 54px;
 	/* or 225% */
@@ -52,7 +48,7 @@ h3 {
 }
 
 h2 {
-	font-family: Aileron-Bold;
+	font-family: Aileron-Bold !important;
 	font-size: 40px;
 	line-height: 54px;
 	/* or 135% */
@@ -60,15 +56,20 @@ h2 {
 	color: #223F78;
 }
 
+.footer-text {
+	font-family: Aileron-Bold !important;
+	font-size: 14px;
+}
+
 .number-map {
-	font-family: Aileron-Light;
+	font-family: Aileron-Light !important;
 	font-size: 90px;
 	line-height: 108px;
 	color: #223F78;
 }
 
 .text-map-blue {
-	font-family: Aileron-Bold;
+	font-family: Aileron-Bold !important;
 	font-size: 14px;
 	line-height: 17px;
 	text-align: center;
@@ -78,7 +79,7 @@ h2 {
 }
 
 .text-map-explain {
-	font-family: Aileron-Regular;
+	font-family: Aileron-Regular !important;
 	font-size: 14px;
 	line-height: 20px;
 	text-align: center;
@@ -120,7 +121,7 @@ h2 {
 }
 
 .time-remaining-style {
-	font-family: Aileron-SemiBold;
+	font-family: Aileron-SemiBold !important;
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 17px;
@@ -135,19 +136,19 @@ h2 {
 }
 
 .time-number {
-	font-family: Aileron-Light;
+	font-family: Aileron-Light !important;
 	font-size: 3.5vw;
 	color: #223F78;
 }
 
 .time-text {
-	font-family: Aileron-Bold;
+	font-family: Aileron-Bold !important;
 	font-size: 1rem;
 	color: #93B9FF;
 }
 
 .colon-style {
-	font-family: Aileron-Regular;
+	font-family: Aileron-Regular !important;
 	margin-top: 5px;
 	font-size: 2.5vw;
 	color: #D7D9E0;
@@ -186,22 +187,15 @@ h2 {
 	align-items: center;
 }
 
-.swiper-slide img {
-	/* display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover; */
-}
-
 .name {
-	font-family: Aileron-Regular;
+	font-family: Aileron-Regular !important;
 	font-size: 2rem;
 	text-align: center;
 	color: #2C2E30;
 }
 
 .name-description {
-	font-family: Aileron-Regular;
+	font-family: Aileron-Regular !important;
 	font-size: 1rem;
 	text-align: center;
 	color: #7E8085;
@@ -243,6 +237,28 @@ h2 {
 	}
 }
 
+@media (max-width: 425px) {
+	h2 {
+		font-size: 20px;
+		line-height: 26px;
+		padding: 0%;
+		margin: 0%;
+	}
+	h3 {
+		font-size: 15px;
+		padding: 0%;
+		margin: 0%;
+	}
+	.margin-top-participants {
+		margin-top: 2rem;
+	}
+
+	.footer-text {
+		font-family: Aileron-Bold !important;
+		font-size: 10px;
+	}
+}
+
 @media (max-width: 767px) {
 	.location-description-rectangle {
 		margin-top: 0rem;
@@ -255,13 +271,11 @@ h2 {
 		width: 100% !important;
 		margin-top: -36vw;
 	}
-
 	.time-remaining-style {
 		font-size: 3vw;
 		margin-top: 1% !important;
 	}
-
-	.time-number{
+	.time-number {
 		font-size: 5vw;
 	}
 }
@@ -286,18 +300,14 @@ h2 {
 	.dot-picture {
 		margin-top: -20%;
 	}
-
 	.time-text {
 		font-size: 1.5vw;
 	}
-
 	.time-remaining-style {
 		font-size: 1.5vw;
 		margin-top: 3% !important;
 	}
-
-	
-	.triangle-pic{
+	.triangle-pic {
 		margin-top: -3% !important;
 	}
 }
