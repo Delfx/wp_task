@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=5" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=5.1" type="text/css" media="screen" />
 
 
 
@@ -95,7 +95,7 @@
 			</div>
 		</div>
 
-		<div class="row col-12 p-md-5 p-0 mt-5 mt-md-0">
+		<div class="row col-12 p-md-5 p-0 mt-5 mt-md-0 ml-0">
 
 			<div class="col-12 col-md-4 mb-4">
 				<div class="d-flex">
@@ -135,7 +135,7 @@
 			</div>
 		</div>
 
-		<div class="col-12 row p-0 d-flex justify-content-center">
+		<div class="col-12 row p-0 d-flex justify-content-center ml-0">
 
 			<div class="col-12 col-md-4 mb-4">
 				<div class="d-flex">
@@ -174,15 +174,15 @@
 
 	</section>
 
-	<section class="map">
+	<section id="counter" class="map">
 
 		<div class="container col-12 col-md-10 col-xl-9">
 
-			<div class="row d-flex justify-content-between col-12 mt-5">
+			<div  class="d-flex flex-md-row flex-column justify-content-between col-12 mt-5">
 
 				<div class="col-12 col-md-3 text-center">
-					<p class="number-map counter-value" data-count="300">
-						0
+					<p class="number-map count" data-count="300">
+						300
 					</p>
 					<p class="text-uppercase text-center text-map-blue">
 						participants
@@ -194,20 +194,20 @@
 				</div>
 
 				<div class="col-12 col-md-3 text-center">
-					<p class="number-map counter-value" data-count="34">
-						0
+					<p class="number-map count" data-count="34">
+						34
 					</p>
 					<p class="text-uppercase text-center text-map-blue">
 						Countries
 					</p>
-					<p class="text-justify text-map-explain">
+					<p class="text-justify text-center text-map-explain">
 						European countries involved in the EU Erasmus+
 					</p>
 				</div>
 
 				<div class="col-12 col-md-3 text-center">
-					<p class="number-map counter-value" data-count="3">
-						0
+					<p class="number-map count" data-count="3">
+						3
 					</p>
 					<p class="text-uppercase text-center text-map-blue">
 						Days
@@ -216,7 +216,6 @@
 						Programme — will meet and discuss in a two-day event in Vilnius, on 17-20 June 2018.
 					</p>
 				</div>
-
 			</div>
 		</div>
 
@@ -568,7 +567,7 @@
 	<footer class="container col-11 d-flex justify-content-between align-items-center align-align-content-center pb-3">
 
 		<div class="">
-			<p class="footer-text m-0" >© Lorem ipsum 2010 - 2019</p>
+			<p class="footer-text m-0">© Lorem ipsum 2010 - 2019</p>
 		</div>
 
 		<div class="">
@@ -599,8 +598,6 @@
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/number_count.js"></script>
 
 
-
 </body>
 
 </html>
-
