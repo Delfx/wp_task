@@ -181,8 +181,8 @@
 			<div class="row d-flex justify-content-between col-12 mt-5">
 
 				<div class="col-12 col-md-3 text-center">
-					<p class="number-map">
-						250
+					<p class="number-map counter-value" data-count="300">
+						0
 					</p>
 					<p class="text-uppercase text-center text-map-blue">
 						participants
@@ -194,8 +194,8 @@
 				</div>
 
 				<div class="col-12 col-md-3 text-center">
-					<p class="number-map">
-						34
+					<p class="number-map counter-value" data-count="34">
+						0
 					</p>
 					<p class="text-uppercase text-center text-map-blue">
 						Countries
@@ -206,8 +206,8 @@
 				</div>
 
 				<div class="col-12 col-md-3 text-center">
-					<p class="number-map">
-						3
+					<p class="number-map counter-value" data-count="3">
+						0
 					</p>
 					<p class="text-uppercase text-center text-map-blue">
 						Days
@@ -596,6 +596,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/swiper.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/counter.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/assets/js/number_count.js"></script>
 
 
 
